@@ -1,0 +1,44 @@
+#server:
+#  port: 9092
+#eureka:
+#  instance:
+#    hostname: localhost
+#    port: 9091
+#    lease-renewal-interval-in-seconds: 5
+#    prefer-ip-address: true
+#  client:
+#    fetchRegistry: false
+#    registerWithEureka: true
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+#  server:
+#    wait-time-in-ms-when-sync-empty: 3000
+#spring:
+#  datasource:
+#    initialization-mode: always
+#    continue-on-error: true
+#    data: classpath:/sql/data.sql
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    password: portal
+#    platform: oracle
+#    schema: classpath:/sql/schema.sql
+#    url: ###########
+#    username: portal
+#  jpa:
+#    database-platform: org.hibernate.dialect.Oracle10gDialect
+#    generate-ddl: false
+#    hibernate:
+#      ddl-auto: none
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#security:
+#  oauth2:
+#    client:
+#      access-token-validity-seconds: 30
+#      authorized-grant-types: password,refresh_token
+#      client-id: portal_unimed
+#      client-secret: $2a$10$LOqePml/koRGsk2YAIOFI.1YNKZg7EsQ5BAIuYP1nWOyYRl21dlne
+#      resource-ids: resources
+#      scope: webclient,mobileclient

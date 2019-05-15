@@ -1,0 +1,1 @@
+DELETE portal.oauth_client_details;

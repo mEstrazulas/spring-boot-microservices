@@ -1,0 +1,18 @@
+server:
+  port: 9091
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    non-secure-port: 80
+    lease-renewal-interval-in-seconds: 5
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    prefer-same-zone-eureka: false
+    allow-redirects: true
+    
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
